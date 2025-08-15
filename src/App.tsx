@@ -482,48 +482,6 @@ function App() {
             </button>
           </div>
           
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="p-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {donors.map((donor, index) => (
-                  <div key={index} className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border border-green-200 hover:shadow-lg transition-all duration-300">
-                    <div className="flex items-start justify-between mb-3">
-                      <div className="flex-1">
-                        <h4 className="font-bold text-gray-800 text-lg mb-1">{donor.name}</h4>
-                        <p className="text-green-600 font-semibold text-xl">{donor.amount}</p>
-                      </div>
-                      <div className="text-3xl">🙏</div>
-                    </div>
-                    <p className="text-gray-500 text-sm flex items-center">
-                      <Calendar className="w-4 h-4 mr-1" />
-                      {donor.date}
-                    </p>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="mt-8 p-6 bg-gradient-to-r from-green-100 to-green-200 rounded-xl text-center">
-                <h4 className="text-xl font-bold text-green-800 mb-2">Total Donasi Terkumpul</h4>
-                <p className="text-3xl font-bold text-green-600">Rp 3.150.000</p>
-                <p className="text-green-700 mt-2">Dari {donors.length} donatur yang mulia hati</p>
-              </div>
-              
-              <div className="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <Heart className="w-6 h-6 text-yellow-600" />
-                  </div>
-                  <div className="ml-3">
-                    <h4 className="text-lg font-semibold text-yellow-800">Cara Berdonasi</h4>
-                    <p className="text-yellow-700 mt-1">
-                      Klik tombol "Donasi Sekarang" di atas untuk menghubungi panitia melalui WhatsApp. 
-                      Kami akan memberikan informasi rekening dan cara donasi yang mudah dan aman.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
